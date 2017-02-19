@@ -1,4 +1,4 @@
-package sorting;
+package sorting.comparisonSorts;
 
 import java.util.Arrays;
 
@@ -43,12 +43,12 @@ public class MergeSort {
      *NOTE: Using an auxiliary array to space memory space. Requires only an additional n size amount of space.
      * Space Complexity: θ(n)
      */
-    public void mergeSort(int[] array) {
+    public static void mergeSort(int[] array) {
         int[] aux = new int[array.length];
         mergeSort(array, aux, 0, array.length - 1);
     }
 
-    private void mergeSort(int[] array, int[] aux, int startIndex, int endIndex) {
+    private static void mergeSort(int[] array, int[] aux, int startIndex, int endIndex) {
         if (startIndex < endIndex) {
             int midPoint = (startIndex + endIndex) / 2;
             mergeSort(array, aux, startIndex, midPoint);
@@ -62,7 +62,7 @@ public class MergeSort {
      * NOTE: In this implementation startingIndex to midpPoint represent the elements in the sorted left array
      * & (midPoint + 1) to endIndex represent the elements in the sorted right array
      */
-    private void merge(int[] array, int[] aux, int startingIndex, int midPoint, int endIndex) {
+    private static void merge(int[] array, int[] aux, int startingIndex, int midPoint, int endIndex) {
         for(int index = startingIndex; index <= endIndex; index++){
             aux[index] = array[index];
         }
