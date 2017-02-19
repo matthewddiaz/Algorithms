@@ -1,8 +1,6 @@
-package sorting.comparisonSorts;
+package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sorting.comparisonSorts.MergeSort;
 
 import java.util.Arrays;
 

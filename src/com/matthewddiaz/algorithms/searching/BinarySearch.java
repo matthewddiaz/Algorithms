@@ -1,4 +1,4 @@
-package searching;
+package com.matthewddiaz.algorithms.searching;
 
 /**
  * Created by matthewdiaz on 8/29/16.

@@ -1,4 +1,4 @@
-import searching.BinarySearch;
+import com.matthewddiaz.algorithms.searching.BinarySearch;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

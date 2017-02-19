@@ -1,11 +1,8 @@
-package sorting.comparisonSorts;
+package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by matthewdiaz on 2/18/17.

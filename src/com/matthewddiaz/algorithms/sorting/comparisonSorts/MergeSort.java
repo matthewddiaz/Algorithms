@@ -1,6 +1,4 @@
-package sorting.comparisonSorts;
-
-import java.util.Arrays;
+package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
 /**
  * Created by matthewdiaz on 8/31/16.

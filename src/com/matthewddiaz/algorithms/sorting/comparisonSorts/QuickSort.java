@@ -1,4 +1,4 @@
-package sorting.comparisonSorts;
+package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
 import java.util.Random;
 
@@ -7,7 +7,7 @@ import java.util.Random;
  */
 
 /**
- * QuickSort in-place Divide & conqueror sorting algorithm using random sampling
+ * QuickSort in-place Divide & conqueror com.matthewddiaz.algorithms.sorting algorithm using random sampling
  *
  * Divide: Partition the array with range [start ... end] into two sub-arrays (potentially empty)
  * left-array ranges [start ... (pivot - 1)] and right-array ranges [(pivot + 1) ... end]
@@ -45,7 +45,7 @@ public class QuickSort {
     }
 
     /**
-     * In place sorting around pivot element (the last element: array[end])
+     * In place com.matthewddiaz.algorithms.sorting around pivot element (the last element: array[end])
      * NOTE: prior to
      * @return pivot index position
      */
