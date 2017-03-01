@@ -5,6 +5,18 @@ import com.matthewddiaz.datastructures.heap.MaxHeap;
 /**
  * Created by matthewdiaz on 2/27/17.
  */
+
+/**
+ * HeapSort is a comparison based sorting in place sorting algorithm.
+ * HeapSort first converts the input array into a maxHeap. Then for every
+ * element from A[n-1] to A[1] perform 3 procedures:
+ * NOTE: n is equal to array.length
+ *
+ * 1) swap A[0] with A[n-1]
+ * 2) decrement maxHeap property heapSize by one
+ * 3) perform maxHeap method maxHeapify on the root node which is indexed at 0
+ * Run time is θ(nlg(n))
+ */
 public class HeapSort {
     private MaxHeap maxHeap;
 
