@@ -26,7 +26,7 @@ public class HeapSort {
 
     public void heapSort(int[] array){
         //construct a max heap. Note that A[0] is the largest element in the array
-        maxHeap.buildMaxHeapify(array);
+        maxHeap.buildMaxHeap(array);
 
         for(int index = array.length - 1; index >= 1; index--){
             //swaps the first element with the element at heapSize
