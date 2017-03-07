@@ -16,7 +16,7 @@ package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
 
     Example:
-    Input: int[] arr = {15, 1, 16, 17, 20, 11, 4, 20};
+    Input: Integer[] arr = {15, 1, 16, 17, 20, 11, 4, 20};
 
     Divide:
     divide 1: {15, 1, 16, 17} {20, 11, 4, 20}

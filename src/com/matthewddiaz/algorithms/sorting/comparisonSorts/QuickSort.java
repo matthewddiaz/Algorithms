@@ -25,7 +25,7 @@ import java.util.Random;
 public class QuickSort {
     private static final Random random = new Random();
 
-    public static void quickSort(int[] array){
+    public static void quickSort(Comparable[] array){
         quickSort(array, 0, array.length - 1);
     }
 
@@ -36,7 +36,7 @@ public class QuickSort {
      * Note: the pivot element does not get included in either of the subarrays
      * because it is already sorted with itself.
      */
-    private static void quickSort(int[] array, int start, int end){
+    private static void quickSort(Comparable[] array, int start, int end){
         if(start < end){
             int pivot = randomizedPartition(array, start, end);
             quickSort(array, start, pivot - 1);
@@ -49,9 +49,9 @@ public class QuickSort {
      * NOTE: prior to
      * @return pivot index position
      */
-    private static int partition(int[] array, int start, int end){
+    private static int partition(Comparable[] array, int start, int end){
         int endOfLessThanIndex = start - 1;
-        int comparisonElement = array[end];
+        Comparable comparisonElement = array[end];
 
         /**
          * If currentElement is less than comparisonElement
@@ -59,7 +59,8 @@ public class QuickSort {
          * with element at endOfLessThanIndex
          */
         for(int index = start; index <= end; index++){
-                if(array[index] < comparisonElement){
+                //if current element is less than comparisonElement
+                 if(array[index].compareTo(comparisonElement) < 0){
                     endOfLessThanIndex++;
                     if(index != endOfLessThanIndex){
                         swap(array, endOfLessThanIndex, index);
@@ -74,8 +75,8 @@ public class QuickSort {
     /**
      * Helper method that swaps element1 and element2 in array
      */
-    private static void swap(int[] array,int positionOfElement1, int positionOfElement2){
-        int tempElementHolder = array[positionOfElement1];
+    private static void swap(Comparable[] array,int positionOfElement1, int positionOfElement2){
+        Comparable tempElementHolder = array[positionOfElement1];
         array[positionOfElement1] = array[positionOfElement2];
         array[positionOfElement2] = tempElementHolder;
     }
@@ -88,7 +89,7 @@ public class QuickSort {
      * thus swapping end element and randomPivotPosition element must be done prior to partitioning.
      * @return
      */
-    private static int randomizedPartition(int[] array, int start, int end){
+    private static int randomizedPartition(Comparable[] array, int start, int end){
         int range = (end - start) + 1;
         int randomPivotPosition = random.nextInt(range) + start;
         swap(array, end, randomPivotPosition);
