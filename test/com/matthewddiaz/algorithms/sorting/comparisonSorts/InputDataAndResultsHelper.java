@@ -10,7 +10,7 @@ public class InputDataAndResultsHelper {
     private String[] stringArray = {"Goku", "Krillian", "Gohan", "Vegeta","Master Roshi", "Piccolo", "Bulma", "Cell"};
 
     //sorted arrays
-    private Integer[] sortedIntegerArray = {1, 4, 15, 11, 16, 17, 19, 20, 100, 103, 105,180};
+    private Integer[] sortedIntegerArray = {1, 4, 11, 15, 16, 17, 19, 20, 100, 103, 105,180};
     private Double[] sortedDoubleArray = {-180.2, 1.1, 2.3, 4.3, 11.1, 15.1, 16.5, 16.6, 17.4, 18.18, 19.3, 100.4, 103.2, 105.4};
     private String[] sortedStringArray = {"Bulma", "Cell", "Gohan", "Goku", "Krillian", "Master Roshi", "Piccolo", "Vegeta"};
 

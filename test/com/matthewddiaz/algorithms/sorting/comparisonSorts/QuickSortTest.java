@@ -2,7 +2,7 @@ package com.matthewddiaz.algorithms.sorting.comparisonSorts;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * Created by matthewdiaz on 2/18/17.
@@ -15,7 +15,7 @@ class QuickSortTest {
         Integer[] expectedResult = inputDataAndResultsHelper.getSortedIntegerArray();
         Integer[] integerArray = inputDataAndResultsHelper.getIntegerArray();
         QuickSort.quickSort(integerArray);
-        Arrays.equals(expectedResult, integerArray);
+        assertArrayEquals(expectedResult, integerArray);
     }
 
     @Test
@@ -23,7 +23,7 @@ class QuickSortTest {
         Double[] expectedResult = inputDataAndResultsHelper.getSortedDoubleArray();
         Double[] doubleArray = inputDataAndResultsHelper.getDoubleArray();
         QuickSort.quickSort(doubleArray);
-        Arrays.equals(expectedResult, doubleArray);
+        assertArrayEquals(expectedResult, doubleArray);
     }
 
     @Test
@@ -31,6 +31,6 @@ class QuickSortTest {
         String[] expectedResult = inputDataAndResultsHelper.getSortedStringArray();
         String[] stringArray = inputDataAndResultsHelper.getStringArray();
         QuickSort.quickSort(stringArray);
-        Arrays.equals(expectedResult, stringArray);
+        assertArrayEquals(expectedResult, stringArray);
     }
 }
