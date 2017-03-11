@@ -24,7 +24,7 @@ public class HeapSort {
         maxHeap = new MaxHeap();
     }
 
-    public void heapSort(int[] array){
+    public void heapSort(Comparable[] array){
         //construct a max heap. Note that A[0] is the largest element in the array
         maxHeap.buildMaxHeap(array);
 
@@ -39,8 +39,8 @@ public class HeapSort {
         }
     }
 
-    private void swap(int[] array, int leftElement, int rightElement){
-        int tempElement = array[leftElement];
+    private void swap(Comparable[] array, int leftElement, int rightElement){
+        Comparable tempElement = array[leftElement];
         array[leftElement] = array[rightElement];
         array[rightElement] = tempElement;
     }
