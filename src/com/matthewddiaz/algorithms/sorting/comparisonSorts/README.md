@@ -6,8 +6,11 @@
 **HeapSort** is an in-place comparison sorting algorithm that
 realizes on a MaxHeap and its method maxHeapify to sort.
 
-- **Runtime**: θ(nlg(n))
-- **Space Complexity**  θ(1)
+**Runtime**: θ(nlg(n))
+
+**Space Complexity:** θ(1)
+
+**Test Class:** [HeapSortTest](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/sorting/comparisonSorts/HeapSortTest.java)
 
 #### 2. [MergeSort](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/comparisonSorts/MergeSort.java)
 **MergeSort** is a divide and conqueror comparison sorting algorithm.
@@ -22,6 +25,12 @@ Divide and Conqueror procedure
 3) **Combine** - Merge the 2 sorted subarrays to produce the answer.
 
 **Runtime**: θ(nlg(n))
+
+**Space Complexity:** θ(n)
+
+**Test Class:** [MergeSortTest](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/sorting/comparisonSorts/MergeSortTest.java)
+
+
 #### 3. [QuickSort](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/comparisonSorts/QuickSort.java)
 **QuickSort** is an in-place divide and conqueror comparison sorting algorithm.
 Note: the the time complexity of this algorithm depends on the pivot
@@ -40,4 +49,10 @@ A[start,pivotIndex - 1] and A[pivotIndex + 1, end].
 **Runtime**: 
 1) Worst Case time: θ(n^2)
 2) Expected time: θ(nlg(n))
+
+**Space Complexity:** θ(1)
+
+**Test Class:** [QuickSortTest](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/sorting/comparisonSorts/QuickSortTest.java)
+
+
 

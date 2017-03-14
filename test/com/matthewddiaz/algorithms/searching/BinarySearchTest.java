@@ -1,9 +1,12 @@
-import com.matthewddiaz.algorithms.searching.BinarySearch;
+package com.matthewddiaz.algorithms.searching;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Created by matthewdiaz on 2/14/17.
+ * Created by matthewdiaz on 3/13/17.
  */
 class BinarySearchTest {
     private int[] arr1 = {10, 14, 15, 16};
@@ -29,4 +32,5 @@ class BinarySearchTest {
         int actualAnswer = BinarySearch.binarySearch(arr1,11);
         assertEquals(expectedAnswer, actualAnswer);
     }
+
 }
