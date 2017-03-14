@@ -16,8 +16,7 @@ realizes on a MaxHeap and its method maxHeapify to sort.
 **MergeSort** is a divide and conqueror comparison sorting algorithm.
 MergeSort does not sort in place and requires O(n) space. 
 
-Divide and Conqueror procedure
-
+Divide and Conqueror procedure:
 1) **Divide** - Divide array A of size n into 2 equal halves of size n/2 A[0, midPoint] 
     and A[midPoint, n].
 2) **Conqueror** - Recursively call mergeSort on the 2 subarrays. 
@@ -37,6 +36,7 @@ Note: the the time complexity of this algorithm depends on the pivot
 element, thus to ensure a good comparison pivot the index of the pivot 
 is randomly selected from the range [start, end]
 
+Divide and Conqueror procedure:
 1) **Divide** - Partition array A of size n into two parts around a pivot element
 A[start,pivotIndex - 1] and A[pivotIndex + 1, end].
     1) **NOTE:** Either of the subarrays could be empty
@@ -48,6 +48,7 @@ A[start,pivotIndex - 1] and A[pivotIndex + 1, end].
 
 **Runtime**: 
 1) Worst Case time: θ(n^2)
+
 2) Expected time: θ(nlg(n))
 
 **Space Complexity:** θ(1)
