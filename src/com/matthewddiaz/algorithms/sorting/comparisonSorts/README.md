@@ -1,4 +1,4 @@
-#Fundamental Algorithms
+# Fundamental Algorithms
 
 ## Comparison Sorts
 Comparison sorting algorithms all share one property: the sorted
