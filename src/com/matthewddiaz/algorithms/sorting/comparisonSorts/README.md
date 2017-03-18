@@ -1,6 +1,11 @@
 #Fundamental Algorithms
 
 ## Comparison Sorts
+Comparison sorting algorithms all share one property: the sorted
+order is determined only by comparison between the input elements.
+
+NOTE: CLRS 3rd edition 8.1 proves that comparison based sorting algorithms 
+has a lower bound of nlg(n) and thus HeapSort and MergeSort are asymptotically optimal. 
 
 #### 1. [HeapSort](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/comparisonSorts/HeapSort.java)
 **HeapSort** is an in-place comparison sorting algorithm that
