@@ -3,12 +3,18 @@ package com.matthewddiaz.algorithms.sorting.nonComparisonSorts;
 /**
  * Created by matthewdiaz on 3/18/17.
  */
+
+/**
+ * Counting Sort is a non-comparison sorting algorithm that makes the assumption that the input data set values
+ * range from [0, maxValue] which the user passes in as a parameter. For an input set of size n; if
+ * k = O(n) when Counting Sort sorts in linear time, θ(n).
+ */
 public class CountingSort {
     public static void countingSort(int[] array, int maxValue){
         //creating elementIndexArray of size maxValue. Ranges from [0, maxValue]
         int[] elementIndexArray = new int[maxValue + 1];
 
-        //populating elementIndexArray with occurrence number of each element in array.
+        //populating elementIndexArray with occurrence number of each element in input array.
         for(int currentElement : array){
             elementIndexArray[currentElement] = elementIndexArray[currentElement] + 1;
         }
