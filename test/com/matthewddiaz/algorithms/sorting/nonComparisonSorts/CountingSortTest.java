@@ -2,6 +2,8 @@ package com.matthewddiaz.algorithms.sorting.nonComparisonSorts;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -13,6 +15,7 @@ class CountingSortTest {
     private int[] oneDifferenceDataSet = {2,2,2,2,2,2,3,2,2,2};
     private int[] largeDataSet = {2,5,1,3,0,6,9,6,8,7,1,6,5,4,7,8,9,2,4,4,1,0,9,5,5,7,6,6,8,8,2,3,7,0,3};
     private int[] alreadySortedDataSet = {1,2,3,3,3,4,5,6,6,7,8,8,9};
+    private int[] increasedMaxValueDataSet = {11,12,3,13,3,4,5,6,6,7,8,8,9,10,11,3,1,10};
 
     @Test
     void testingCountingSortWithSimpleData() {
@@ -46,5 +49,12 @@ class CountingSortTest {
         int[] expectedSortedData = {1,2,3,3,3,4,5,6,6,7,8,8,9};
         CountingSort.countingSort(alreadySortedDataSet, 9);
         assertArrayEquals(expectedSortedData, alreadySortedDataSet);
+    }
+
+    @Test
+    void testingCountingSortWithIncreasedMaxValueData() {
+        int[] expectedSortedData = {1, 3, 3, 3, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10, 11, 11, 12, 13};
+        CountingSort.countingSort(increasedMaxValueDataSet, 13);
+        assertArrayEquals(expectedSortedData, increasedMaxValueDataSet);
     }
 }
