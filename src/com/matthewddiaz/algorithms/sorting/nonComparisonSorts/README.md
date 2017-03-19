@@ -28,9 +28,9 @@ sort does not sort in place; since it requires these 2 additional arrays.
  input data set ranges from [0, 9]. Radix Sort sorts the input data from the least significant digit column to the 
  most significant digit column. Column ranges from [1, d]. 
  
- Radix Sort uses Digit Counting Sort to sort the input data set on each column. 
- Digit Counting Sort algorithm is a slight modification from Counting Sort in that the element that is stored
- is not the actual number but the current digit of the number.
+ Radix Sort uses [Digit Counting Sort]((https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts/DigitCountingSort.java)) 
+ to sort the input data set on each column. Digit Counting Sort algorithm is a slight modification from Counting Sort in that the element that is stored
+ in elementIndexArray is not the actual number but the current digit of the number.
 
  **Runtime**: θ(n), when k = O(n) and d is constant
  
