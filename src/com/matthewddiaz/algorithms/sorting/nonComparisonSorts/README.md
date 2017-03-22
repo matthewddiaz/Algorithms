@@ -39,3 +39,15 @@ sort does not sort in place; since it requires these 2 additional arrays.
  **Test Class:** [RadixSortTest](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts/RadixSortTest.java)
 
 #### 3. [Bucket Sort](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts/BucketSort.java)
+**Bucket Sort** is a non-comparison sorting algorithm that sorts input data sets whose values ranges from [0,1]. Bucket Sort makes the assumption that the 
+input data is randomly selected from a process that uniformly and independently distributes the input data. For an n input data set Bucket Sort creates n buckets
+ each of size (1/n). Therefore the buckets ranges from [0, n-1]. Since bucket sort makes the assumption on the input data; the each individual bucket should contain 
+ very little elements; because elements should be equally distributed between the buckets. The algorithm then sorts each bucket individually and the sorted input data 
+ set is the result of traversing the buckets in order from 0 to n - 1.
+ **NOTE:** Bucket Sort relies on an array of linkedList of size n-1 to maintain all of the buckets! 
+ 
+**Average case runtime:**: O(n)
+ 
+ **Space Complexity:** θ(n)
+ 
+ **Test Class:** [BucketSortTest](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts/BucketSortTest.java)

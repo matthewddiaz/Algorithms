@@ -2,9 +2,6 @@ package com.matthewddiaz.algorithms.sorting.nonComparisonSorts;
 
 import com.matthewddiaz.algorithms.sorting.comparisonSorts.QuickSort;
 import com.matthewddiaz.datastructures.linkedList.LinkedList;
-import com.matthewddiaz.designpatterns.behavioralPatterns.Iterator;
-
-import java.util.Arrays;
 
 /**
  * Created by matthewdiaz on 3/21/17.
@@ -12,7 +9,9 @@ import java.util.Arrays;
 public class BucketSort {
 
     /**
-     *
+     * Sorts inputArr.
+     * NOTE: bucketSort assumes that inputArr input data ranges from [0,1] and
+     * that the data is equally distributed from [0,1]
      * @param inputArr
      */
     public static void bucketSort(Double[] inputArr){
@@ -24,6 +23,7 @@ public class BucketSort {
             arrayOfLinkedLists[index] = new LinkedList<>();
         }
 
+        //inserting each element in inputArr into its correct bucket
         for(double element : inputArr){
             int elementIndex = getElementIndex(element, numOfElements);
 
@@ -33,13 +33,13 @@ public class BucketSort {
 
         int index = 0;
         for (LinkedList<Double> linkedList : arrayOfLinkedLists) {
-            //converting linkedlist to array
+            //converting linked list to array
             int listSize = linkedList.size();
             if(listSize > 0){
                 Double[] array = linkedList.toArray(new Double[listSize]);
                 //sorting array using QuickSort
                 QuickSort.quickSort(array);
-
+                //repopulating inputArr with the elements sorted
                 for(Double element : array){
                     inputArr[index++] = element;
                 }
@@ -48,7 +48,7 @@ public class BucketSort {
     }
 
     /**
-     *
+     *Calculates the index of the bucket that the element is going to be inserted into.
      * @param element
      * @param numOfElements
      * @return
