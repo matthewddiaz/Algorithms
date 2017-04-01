@@ -28,9 +28,9 @@ public class HeapSort {
         //construct a max heap. Note that A[0] is the largest element in the array
         maxHeap.buildMaxHeap(array);
 
-        for(int index = array.length - 1; index >= 1; index--){
-            //swaps the first element with the element at heapSize
-            swap(array, 0, maxHeap.getHeapSize());
+        for(int index = maxHeap.getLength() - 1; index >= 1; index--){
+            //swaps the first element at index (the last element in heap)
+            swap(array, 0, index);
             //decrement the heapSize
             maxHeap.decrementHeapSize();
             //perform maxHeapify on the first element to ensure that the heap rule still applies
