@@ -7,7 +7,7 @@ import com.matthewddiaz.datastructures.heap.MaxHeap;
  */
 
 /**
- * HeapSort is a comparison based sorting in place sorting algorithm.
+ * HeapSort is an in-place comparison based sorting algorithm.
  * HeapSort first converts the input array into a maxHeap. Then for every
  * element from A[n-1] to A[1] perform 3 procedures:
  * NOTE: n is equal to array.length

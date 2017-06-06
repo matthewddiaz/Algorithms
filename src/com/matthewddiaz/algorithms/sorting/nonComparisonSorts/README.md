@@ -10,7 +10,7 @@ determine sorting order. The algorithms in this section sort in linear time; θ(
 input data set value ranges. It assumes that the input data set ranges from 0 to k. Counting Sort
 then uses two additional arrays; an auxiliary (copy array) and an elementIndexArray that calculates
 the correct position for every element in the original array. This algorithm performs best when input data
-value range is positive and small and the input data also contains lots of repeating data. 
+value range is positive, small, and the input data also contains lots of repeating data. 
  
  **NOTE:** counting
 sort does not sort in place; since it requires these 2 additional arrays.
@@ -41,9 +41,10 @@ sort does not sort in place; since it requires these 2 additional arrays.
 #### 3. [Bucket Sort](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts/BucketSort.java)
 **Bucket Sort** is a non-comparison sorting algorithm that sorts input data sets whose values ranges from [0,1]. Bucket Sort makes the assumption that the 
 input data is randomly selected from a process that uniformly and independently distributes the input data. For an n input data set Bucket Sort creates n buckets
- each of size (1/n). Therefore the buckets ranges from [0, n-1]. Since bucket sort makes the assumption on the input data; the each individual bucket should contain 
+ each of size (1/n). Therefore the buckets ranges from [0, n-1]. Since bucket sort makes the assumption on the input data; each individual bucket should contain 
  very little elements; because elements should be equally distributed between the buckets. The algorithm then sorts each bucket individually and the sorted input data 
  set is the result of traversing the buckets in order from 0 to n - 1.
+ 
  **NOTE:** Bucket Sort relies on an array of linkedList of size n-1 to maintain all of the buckets! 
  
 **Average case runtime:**: O(n)
