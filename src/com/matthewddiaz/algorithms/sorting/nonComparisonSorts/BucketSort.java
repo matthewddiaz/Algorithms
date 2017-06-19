@@ -1,7 +1,8 @@
 package com.matthewddiaz.algorithms.sorting.nonComparisonSorts;
 
 import com.matthewddiaz.algorithms.sorting.comparisonSorts.QuickSort;
-import com.matthewddiaz.datastructures.linkedList.LinkedList;
+import com.matthewddiaz.datastructures.lists.LinkedList;
+
 
 /**
  * Created by matthewdiaz on 3/21/17.
