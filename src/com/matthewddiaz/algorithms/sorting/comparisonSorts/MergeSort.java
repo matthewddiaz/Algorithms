@@ -57,7 +57,7 @@ public class MergeSort {
 
     /**
      * Merges two pre-sorted arrays of size m into 1 sorted array of size 2m.
-     * NOTE: In this implementation startingIndex to midpPoint represent the elements in the sorted left array
+     * NOTE: In this implementation startingIndex to midPoint represent the elements in the sorted left array
      * & (midPoint + 1) to endIndex represent the elements in the sorted right array
      */
     private static void merge(Comparable[] array, Comparable[] aux, int startingIndex, int midPoint, int endIndex) {
