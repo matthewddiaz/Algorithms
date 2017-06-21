@@ -21,8 +21,10 @@ class MatrixMultiplicationTest {
 
     @Test
     void matrixMultiplication() {
+        String expectedMatrix = "[ 73 ]\n[ 20 ]\n";
+
         int[][] matrixC = MatrixMultiplication.matrixMultiplication(matrixA, matrixB);
-        System.out.println(printMatrix(matrixC));
+        assertEquals(expectedMatrix, printMatrix(matrixC));
     }
 
     private String printMatrix(int[][] matrix){

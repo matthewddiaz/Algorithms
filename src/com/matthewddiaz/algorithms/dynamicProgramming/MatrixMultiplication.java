@@ -11,6 +11,12 @@ public class MatrixMultiplication {
      * @param matrixB input matrix B
      * @return returns a new matrix C; which is the matrix multiplication of A and B
      * NOTE: matrixA has to have equal number of cols as matrix B has of rows
+     *
+     *
+     * Ex: Multiplying matrix A and B will generate matrix C
+     *     [1, 5, 6]         [5 ]     [ 73 ]
+     *     [2, 1, 0]   X     [10]  =  [ 20 ]
+     *                       [3 ]
      */
     public static int[][] matrixMultiplication(int[][] matrixA, int[][] matrixB){
         //The # of matrixA columns has to equal the # of matrixB rows for proper multiplication.
