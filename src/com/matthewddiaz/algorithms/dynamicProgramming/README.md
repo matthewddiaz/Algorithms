@@ -53,9 +53,33 @@ Th recursive procedure has been "memoized" - it remembers previously computed re
 sub-problem depends only on solving smaller sized sub-problems. Therefore we sort the subproblems by size and solve them 
 in order from smallest to the size of the original problem.  
 
+## Elements of Dynamic Programming
 
+### Two Components that an Optimization problem must have in order for DP to apply.
 
+#### 1) Optimal Substructure
+A problem contains **optimal substructure** if an optimal solution to the problem is produced from optimal solutions 
+to sub-problems.
 
+Common pattern in discovering optimal substructure:
+1) Solution consists of making a choice.
+2) You assume that for the given problem you are given a choice that leads to an optimal solution.
+3) Given this choice you determine which sub-problems lead to the optimal solution and also characterize the resulting 
+space of the sub-problems. 
+4) Prove that solutions of sub-problems used within an optimal solution to the problem must themselves be optimal
+
+**Note:** Problems must have independent sub-problems for DP to work. Two sub-problems are independent if the solution to one 
+sub-problem does not effect the solution of another sub-problem of the same problem.  
+
+#### 2) Overlapping Sub-problems
+
+An optimization problem contains **overlapping sub-problems** when a recursive algorithm revisits the same problem 
+repeatedly while solving the problem. 
+
+This hopefully means that the total number of unique sub-problems is small, polynomial with respect to the size
+of the problem.
+ 
+**Note:** DP works well on problems that contain sub-problems that are **overlapping** and are **independent**. 
 
 
 
