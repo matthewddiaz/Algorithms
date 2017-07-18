@@ -1,7 +1,5 @@
 package com.matthewddiaz.algorithms.dynamicProgramming;
 
-import java.util.List;
-
 /**
  * Created by matthewdiaz on 6/22/17.
  */
@@ -13,7 +11,7 @@ public class MatrixChainOrder {
      * @param matricesDimensions
      * @return
      */
-    public static int matrixChainOrder(int[] matricesDimensions){
+    public static int minNumOfMatrixMultiplications(int[] matricesDimensions){
         //creating table to store min costs at every sub-problem size
         int[][] minCost = new int[matricesDimensions.length][matricesDimensions.length];
 
@@ -23,10 +21,10 @@ public class MatrixChainOrder {
             }
         }
 
-        return matrixChainOrder(matricesDimensions, minCost, 1, minCost.length - 1 );
+        return minNumOfMatrixMultiplications(matricesDimensions, minCost, 1, minCost.length - 1 );
     }
 
-    private static int matrixChainOrder(int[] matricesDimensions, int[][] minCost, int startIndex, int endIndex){
+    private static int minNumOfMatrixMultiplications(int[] matricesDimensions, int[][] minCost, int startIndex, int endIndex){
         //base case where the matrixChain is of size one. This is just a single matrix and therefore no order is required.
         if(startIndex == endIndex){
             return 0;
@@ -40,8 +38,8 @@ public class MatrixChainOrder {
         //set min to largest possible int value
         int min = Integer.MAX_VALUE;
         for(int splitIndex = startIndex; splitIndex < endIndex; splitIndex++){
-            int costAtSplit = matrixChainOrder(matricesDimensions, minCost, startIndex, splitIndex) +
-                              matrixChainOrder(matricesDimensions, minCost, splitIndex + 1, endIndex) +
+            int costAtSplit = minNumOfMatrixMultiplications(matricesDimensions, minCost, startIndex, splitIndex) +
+                              minNumOfMatrixMultiplications(matricesDimensions, minCost, splitIndex + 1, endIndex) +
                               matricesDimensions[startIndex  - 1] * matricesDimensions[splitIndex] * matricesDimensions[endIndex];
             if(costAtSplit < min){
                 min = costAtSplit;
