@@ -7,7 +7,7 @@ package com.matthewddiaz.algorithms.dynamicProgramming;
 /**
  * NOTE: Top Down Approach refers to using recursion and memoization.
  */
-public class RodCuttingProblemTopDownApproach {
+public class RodCuttingProblemTopDown {
     /**
      * Returns the max revenue given a rod of input length (N) and a table
      * of prices for the prices of each rod length from 1 to N

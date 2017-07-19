@@ -7,7 +7,7 @@ package com.matthewddiaz.algorithms.dynamicProgramming;
 /**
  * NOTE: Bottom Up refers to iterative approach to solving the problem
  */
-public class RodCuttingProblemBottomUpApproach {
+public class RodCuttingProblemBottomUp {
     /**
      * Returns the max revenue given a rod of input length (N) and a table
      * of prices for the prices of each rod length from 1 to N

@@ -81,6 +81,43 @@ of the problem.
  
 **Note:** DP works well on problems that contain sub-problems that are **overlapping** and are **independent**. 
 
+## Classic Dynamic Programming Problems
+
+### 1. Longest Common Subsequence
+
+**Problem:** Given two Strings **str1** and **str2** return the length of the longest Common Subsequence (LCS).
+
+**Bottom-Up Solution:** [Longest Common Subsequence Bottom-Up](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/LongestCommonSubsequenceBottomUp.java) 
+
+**Bottom-Up Test Class:** [Longest Common Subsequence Bottom-Up Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/LongestCommonSubsequenceBottomUpTest.java)
 
 
+**Top-Down Solution:** [Longest Common Subsequence Top-Down](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/LongestCommonSubsequenceTopDown.java) 
+
+**Top-Down Test Class:** [Longest Common Subsequence Top-Down Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/LongestCommonSubsequenceTopDownTest.java)
+
+
+
+### 2. [Matrix Chain Order](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/MatrixChainOrder.java)
+
+**Problem:** Given an array of matrices determine the min number of matrix multiplications required to multiply
+all of the matrices. Give the order matrices that would produce an optimal solution.
+
+**Test class:** [Matrix Chain Order Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/MatrixChainOrderTest.java)
+
+
+
+### 3. Rod Cutting Problem 
+
+**Problem:** Given a rod of length **N** and an **array** of prices for the price of the cut at an index from 0 to N,
+return the max profit for the rod. 
+
+**Bottom-Up Solution:** [Rod Cutting Bottom-Up](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/RodCuttingProblemBottomUp.java) 
+
+**Bottom-Up Test Class:** [Rod Cutting Bottom-Up Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/RodCuttingProblemBottomUpTest.java)
+
+
+**Top-Down Solution:** [Rod Cutting Top-Down](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/RodCuttingProblemTopDown.java) 
+
+**Top-Down Test Class:** [Rod Cutting Top-Down Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/RodCuttingProblemTopDownTest.java)
 

@@ -9,6 +9,10 @@ Repository for commonly used algorithms in computer science.
 1. [Dynamic Programming](https://github.com/matthewddiaz/Algorithms/tree/master/src/com/matthewddiaz/algorithms/dynamicProgramming) 
 
 
+### Greedy Algorithms
+1. [Greedy Algorithms](https://github.com/matthewddiaz/Algorithms/tree/master/src/com/matthewddiaz/algorithms/greedyAlgorithms)
+
+
 ### Sorting
 1. [Comparison Sorts](https://github.com/matthewddiaz/Algorithms/tree/master/src/com/matthewddiaz/algorithms/sorting/comparisonSorts)
 2. [Non-Comparison Sorts](https://github.com/matthewddiaz/Algorithms/tree/master/src/com/matthewddiaz/algorithms/sorting/nonComparisonSorts)
