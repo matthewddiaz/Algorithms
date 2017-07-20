@@ -121,3 +121,11 @@ return the max profit for the rod.
 
 **Top-Down Test Class:** [Rod Cutting Top-Down Test](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/RodCuttingProblemTopDownTest.java)
 
+
+
+### 4. [0-1 Knapsack Problem](https://github.com/matthewddiaz/Algorithms/blob/master/src/com/matthewddiaz/algorithms/dynamicProgramming/Knapsack01Problem.java)
+
+**Problem:** Given n items determine the items that would generate the most profit given a max Weight limit. Each item 
+has a value and a weight. In this particular case of the Knapsack problem one can only take the item or not take the item.
+
+**Test class:** [Knapsack01ProblemTest](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/dynamicProgramming/Knapsack01ProblemTest.java)
