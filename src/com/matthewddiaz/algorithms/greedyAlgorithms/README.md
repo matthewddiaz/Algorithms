@@ -64,3 +64,4 @@ one may take is 1 unit which is (Value/Weight).
 
 **Test Class:** [FractionalKnapsackProblemTest](https://github.com/matthewddiaz/Algorithms/blob/master/test/com/matthewddiaz/algorithms/greedyAlgorithms/FractionalKnapsackProblemTest.java)
 
+# NOTE: need to complete Greedy section! Stopped at 16.3 Huffman Codes
