@@ -1,4 +1,4 @@
-package com.matthewddiaz.algorithms.graphAlgorithms;
+package com.matthewddiaz.algorithms.graphAlgorithms.graphTraversals;
 
 import com.matthewddiaz.datastructures.graphs.Graph;
 

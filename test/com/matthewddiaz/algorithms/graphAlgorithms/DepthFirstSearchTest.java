@@ -1,9 +1,8 @@
 package com.matthewddiaz.algorithms.graphAlgorithms;
 
+import com.matthewddiaz.algorithms.graphAlgorithms.graphTraversals.DepthFirstSearch;
 import com.matthewddiaz.datastructures.graphs.*;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Created by matthewdiaz on 7/20/17.
