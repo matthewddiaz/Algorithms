@@ -51,9 +51,9 @@ public class BreadthFirstSearch {
                     //add the discovered vertex to the queue
                     queue.add(adjVertex);
                 }
-                //current vertex is finished; all of its adjacent vertices have been visited.
-                currentVertex.setVisit_state(2);
             }
+            //current vertex is finished; all of its adjacent vertices have been visited.
+            currentVertex.setVisit_state(2);
         }
         return graphBFS.toString();
     }
